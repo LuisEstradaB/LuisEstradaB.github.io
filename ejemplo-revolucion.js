@@ -1,19 +1,12 @@
-var figura = new THREE.Shape();
+var puntos = [];
 
-figura.moveTo(10, 40);
-//figura.lineTo(10, 40);
-figura.lineTo(40, 40);
-figura.lineTo(10, 10);
-//var puntos = [];
-
-/*for ( var i = 0; i < 50; i ++ ) {
+for ( var i = 0; i < 50; i ++ ) {
     puntos.push( new THREE.Vector2(
                      Math.sin( i * 0.2 ) * 15 + 50,
                      ( i - 5 ) * 1 ) );
-}*/
+}
 
-//var forma = new THREE.LatheGeometry(puntos);
-var forma = new THREE.LatheGeometry(figura);
+var forma = new THREE.LatheGeometry(puntos);
 
 var material = new THREE.MeshNormalMaterial();
 
