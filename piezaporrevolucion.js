@@ -3,13 +3,13 @@ var puntos = [];
 for ( var i = 0; i < 10; i ++ ) {
     puntos.push( new THREE.Vector2( (5/9)*i , i ) );
 }
-for ( var i = 10; i < 19; i ++ ) {
+for ( var i = 9; i < 19; i ++ ) {
     puntos.push( new THREE.Vector2( 8-(1/3)*i , i ) );
 }
-for ( var i = 19; i < 23; i ++ ) {
+for ( var i = 18; i < 23; i ++ ) {
     puntos.push( new THREE.Vector2( 2, i ) );
 }
-for ( var i = 23; i < 29; i ++ ) {
+for ( var i = 22; i < 29; i ++ ) {
     puntos.push( new THREE.Vector2( (16-(i-25)^2)^(1/2) , i ) );
 }
 
