@@ -52,7 +52,7 @@ for ( var i = 23; i < 30; i ++ ) {
 //puntos.push( new THREE.Vector2( 0 , 28 ) );
 
 var forma2 = new THREE.LatheGeometry(puntos);
-forma2.translate(30,30,30);
+forma2.translate(50,0,0);
 
 var material2 = new THREE.MeshNormalMaterial();
 
@@ -92,7 +92,7 @@ pieza.merge(brazodMalla.geometry,brazodMalla.matrix);
 pieza.merge(brazoiMalla.geometry,brazoiMalla.matrix);
 pieza.merge(cuelloMalla.geometry,cuelloMalla.matrix);
 pieza.merge(cabezaMalla.geometry,cabezaMalla.matrix);
-pieza.translate(60,60,60);
+pieza.translate(100,0,0);
 
 var material3 = new THREE.MeshNormalMaterial();
 
