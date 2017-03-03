@@ -94,7 +94,9 @@ pieza.merge(cuelloMalla.geometry,cuelloMalla.matrix);
 pieza.merge(cabezaMalla.geometry,cabezaMalla.matrix);
 pieza.translate(100,10,0);
 
-var material3 = new THREE.MeshNormalMaterial();
+var color = new THREE.Color("rgb(255, 0, 0)");
+//var material3 = new THREE.MeshNormalMaterial();
+var material3 = new THREE.LineBasicMaterial(color);
 
 var piezaMalla = new THREE.Mesh(pieza,material3);
 
