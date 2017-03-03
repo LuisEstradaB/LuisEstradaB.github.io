@@ -52,7 +52,7 @@ for ( var i = 23; i < 30; i ++ ) {
 //puntos.push( new THREE.Vector2( 0 , 28 ) );
 
 var forma2 = new THREE.LatheGeometry(puntos);
-forma2.translate(50,10,0);
+forma2.translate(50,0,0);
 
 var material2 = new THREE.MeshNormalMaterial();
 
@@ -113,6 +113,7 @@ escena.add(malla4);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 300;
+camara.position.y = 100;
 
 renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
