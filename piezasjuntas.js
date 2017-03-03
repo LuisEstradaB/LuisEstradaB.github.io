@@ -96,7 +96,7 @@ pieza.translate(100,10,0);
 
 var color = new THREE.Color("rgb(255, 0, 0)");
 //var material3 = new THREE.MeshNormalMaterial();
-var material3 = new THREE.LineBasicMaterial(color);
+var material3 = new THREE.MeshBasicMaterial(color);
 
 var piezaMalla = new THREE.Mesh(pieza,material3);
 
