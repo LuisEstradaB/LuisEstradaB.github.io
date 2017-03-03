@@ -9,8 +9,8 @@ for ( var i = 10; i < 19; i ++ ) {
 for ( var i = 19; i < 23; i ++ ) {
     puntos.push( new THREE.Vector2( 2, i ) );
 }
-for ( var i = 23; i < 36; i ++ ) {
-    puntos.push( new THREE.Vector2( Math.sqrt(16-(i-25)^2) , 23+0.5*(i-23) ) );
+for ( var i = 23; i < 29; i ++ ) {
+    puntos.push( new THREE.Vector2( Math.sqrt(16-(i-25)^2) , i ) );
 }
 
 var forma = new THREE.LatheGeometry(puntos);
