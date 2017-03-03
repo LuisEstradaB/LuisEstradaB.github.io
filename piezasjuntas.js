@@ -100,8 +100,8 @@ var piezaMalla = new THREE.Mesh(pieza,material3);
 
 
 var escena = new THREE.Scene();
-escena.add(Malla1);
-escena.add(Malla2);
+escena.add(malla1);
+escena.add(malla2);
 escena.add(piezaMalla);
 
 var camara = new THREE.PerspectiveCamera();
