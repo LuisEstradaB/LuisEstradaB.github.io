@@ -5,13 +5,13 @@ piernad.translate(1,0,0);
 var piernai = new THREE.BoxGeometry(1,5,1);
 piernai.translate(-1,0,0);
 var brazod = new THREE.BoxGeometry(3,1,1);
-brazod.translate(5,6,0);
+brazod.translate(5,7,0);
 var brazoi = new THREE.BoxGeometry(3,1,1);
-brazoi.translate(-5,6,0);
+brazoi.translate(-5,7,0);
 var cuello = new THREE.CylinderGeometry(1,1,3);
 cuello.translate(0,10,0);
 var cabeza = new THREE.SphereGeometry(3);
-cabeza.translate(0,15,0);
+cabeza.translate(0,14,0);
 
 var cuerpoMalla = new THREE.Mesh(cuerpo);
 var piernadMalla = new THREE.Mesh(piernad);
