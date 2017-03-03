@@ -52,7 +52,7 @@ for ( var i = 23; i < 30; i ++ ) {
 //puntos.push( new THREE.Vector2( 0 , 28 ) );
 
 var forma2 = new THREE.LatheGeometry(puntos);
-forma2.translate(50,0,0);
+forma2.translate(50,10,0);
 
 var material2 = new THREE.MeshNormalMaterial();
 
