@@ -73,7 +73,7 @@ brazoi.translate(-8,12,0);
 var cuello = new THREE.CylinderGeometry(2,2,4);
 cuello.translate(0,15,0);
 var cabeza = new THREE.SphereGeometry(6);
-cabeza.translate(0,20,0);
+cabeza.translate(0,22,0);
 
 var cuerpoMalla = new THREE.Mesh(cuerpo);
 var piernadMalla = new THREE.Mesh(piernad);
