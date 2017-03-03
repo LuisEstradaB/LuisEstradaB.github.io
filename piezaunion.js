@@ -43,7 +43,7 @@ pieza.merge(cabezaMalla.geometry,cabezaMalla.matrix);
 
 var material = new THREE.MeshNormalMaterial();
 
-var piezaMalla = ne THREE.Mesh(pieza,material);
+var piezaMalla = new THREE.Mesh(pieza,material);
 
 //var arbolMalla = new THREE.Mesh(arbolForma, material);
 
