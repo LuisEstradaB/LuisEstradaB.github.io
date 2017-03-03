@@ -52,7 +52,7 @@ for ( var i = 23; i < 30; i ++ ) {
 //puntos.push( new THREE.Vector2( 0 , 28 ) );
 
 var forma2 = new THREE.LatheGeometry(puntos);
-forma2.translate(50,0,0);
+forma2.translate(50,10,0);
 
 var material2 = new THREE.MeshNormalMaterial();
 
@@ -60,20 +60,20 @@ var malla2 = new THREE.Mesh( forma2, material2 );
 
 
 //Pieza Union
-var cuerpo = new THREE.DodecahedronGeometry(5);
-cuerpo.translate(0,5,0);
-var piernad = new THREE.BoxGeometry(1,5,1);
+var cuerpo = new THREE.DodecahedronGeometry(6);
+cuerpo.translate(0,6,0);
+var piernad = new THREE.BoxGeometry(1,6,1);
 piernad.translate(1,0,0);
-var piernai = new THREE.BoxGeometry(1,5,1);
+var piernai = new THREE.BoxGeometry(1,6,1);
 piernai.translate(-1,0,0);
-var brazod = new THREE.BoxGeometry(3,1,1);
-brazod.translate(5,7,0);
-var brazoi = new THREE.BoxGeometry(3,1,1);
-brazoi.translate(-5,7,0);
+var brazod = new THREE.BoxGeometry(4,1,1);
+brazod.translate(6,8,0);
+var brazoi = new THREE.BoxGeometry(4,1,1);
+brazoi.translate(-6,8,0);
 var cuello = new THREE.CylinderGeometry(1,1,3);
-cuello.translate(0,10,0);
-var cabeza = new THREE.SphereGeometry(3);
-cabeza.translate(0,14,0);
+cuello.translate(0,11,0);
+var cabeza = new THREE.SphereGeometry(4);
+cabeza.translate(0,16,0);
 
 var cuerpoMalla = new THREE.Mesh(cuerpo);
 var piernadMalla = new THREE.Mesh(piernad);
@@ -92,17 +92,24 @@ pieza.merge(brazodMalla.geometry,brazodMalla.matrix);
 pieza.merge(brazoiMalla.geometry,brazoiMalla.matrix);
 pieza.merge(cuelloMalla.geometry,cuelloMalla.matrix);
 pieza.merge(cabezaMalla.geometry,cabezaMalla.matrix);
-pieza.translate(100,0,0);
+pieza.translate(100,10,0);
 
 var material3 = new THREE.MeshNormalMaterial();
 
 var piezaMalla = new THREE.Mesh(pieza,material3);
 
 
+var tabla = new THREE.BoxGeometry(200,10,200);
+//tabla.translate(0,0,-200);
+var material4 = new THREE.MeshNormalMaterial();
+var malla4 = new THREE.Mesh(tabla,material4);
+
+
 var escena = new THREE.Scene();
 escena.add(malla1);
 escena.add(malla2);
 escena.add(piezaMalla);
+escena.add(malla4);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 300;
