@@ -183,7 +183,7 @@ Oruga.merge(PataAtras3M.geometry, PataAtras3M.matrix);
 Oruga.merge(PataAtras4M.geometry, PataAtras4M.matrix);
 
 //var material = new THREE.MeshNormalMaterial();
-Oruga.rotateY(Math.PI/2);
+Oruga.rotateY(Math.PI/4);
 Oruga.translate(90,10,0);
 var OrugaM = new THREE.Mesh(Oruga, material1);
 
@@ -462,7 +462,7 @@ forma.computeFaceNormals();
 //var material = new THREE.MeshNormalMaterial();
 
 forma.rotateY(Math.PI/4);
-forma.translate(120,10,0);
+forma.translate(120,6,0);
 var malla5 = new THREE.Mesh( forma, material1 );
 
 
@@ -620,7 +620,7 @@ formaE.computeFaceNormals();
 //var material = new THREE.MeshNormalMaterial();
 
 formaE.rotateY(Math.PI*7/4);
-formaE.translate(150,10,0);
+formaE.translate(150,6,0);
 var mallaE = new THREE.Mesh( formaE, material1 );
 
 
