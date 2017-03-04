@@ -122,11 +122,13 @@ escena.add(malla4);
 
 //forma1.translate(-20,0,0);
 var malla12 = new THREE.Mesh( forma1, material2 );
-malla12.translate(-20,0,0);
-forma2.translate(-100,0,0);
+malla12.translateX(-20);
+//forma2.translate(-100,0,0);
 var malla22 = new THREE.Mesh( forma2, material2 );
-pieza.translate(-200,0,0);
+malla22.translateX(-100);
+//pieza.translate(-200,0,0);
 var piezaMalla2 = new THREE.Mesh(pieza,material2);
+piezaMalla2.translateX(-200);
 
 escena.add(malla12);
 escena.add(malla22);
