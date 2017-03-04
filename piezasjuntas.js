@@ -1,4 +1,8 @@
 //Pieza Extrusion
+var c = new THREE.Color("rgb(255, 0, 0)");
+var material1 = new THREE.MeshNormalMaterial();
+material1.color=c;
+
 var figura = new THREE.Shape();
 
 figura.moveTo(10, 10);//1
@@ -30,7 +34,7 @@ figura.lineTo(10, 10);//25
 var forma1 = new THREE.ExtrudeGeometry( figura,
                                        {amount: 1} );
                                        
-var material1 = new THREE.MeshNormalMaterial();
+//var material1 = new THREE.MeshNormalMaterial();
 var malla1 = new THREE.Mesh( forma1, material1 );
 
 
@@ -54,9 +58,9 @@ for ( var i = 23; i < 30; i ++ ) {
 var forma2 = new THREE.LatheGeometry(puntos);
 forma2.translate(50,10,0);
 
-var material2 = new THREE.MeshNormalMaterial();
+//var material2 = new THREE.MeshNormalMaterial();
 
-var malla2 = new THREE.Mesh( forma2, material2 );
+var malla2 = new THREE.Mesh( forma2, material1 );
 
 
 //Pieza Union
@@ -95,11 +99,11 @@ pieza.merge(cabezaMalla.geometry,cabezaMalla.matrix);
 pieza.translate(100,10,0);
 
 //var c = new THREE.Color("rgb(255, 0, 0)");
-var material3 = new THREE.MeshNormalMaterial();
+//var material3 = new THREE.MeshNormalMaterial();
 //var material3 = new THREE.MeshBasicMaterial();
 //material3.color=c;
 
-var piezaMalla = new THREE.Mesh(pieza,material3);
+var piezaMalla = new THREE.Mesh(pieza,material1);
 
 
 var tabla = new THREE.BoxGeometry(200,10,200);
