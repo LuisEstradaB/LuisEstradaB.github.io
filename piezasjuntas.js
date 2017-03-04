@@ -185,7 +185,6 @@ Oruga.merge(PataAtras4M.geometry, PataAtras4M.matrix);
 //var material = new THREE.MeshNormalMaterial();
 Oruga.translate(90,10,0);
 var OrugaM = new THREE.Mesh(Oruga, material1);
-OrugaM.rotateY(Math.PI/2);
 
 
 //Lobito------------------------------------------------------------------------------------------------------------------------------
@@ -463,7 +462,6 @@ forma.computeFaceNormals();
 
 forma.translate(120,10,0);
 var malla5 = new THREE.Mesh( forma, material1 );
-malla5.rotateY(Math.PI/4);
 
 
 //Ender------------------------------------------------------------------------------------------------------------------------------
@@ -621,7 +619,6 @@ formaE.computeFaceNormals();
 
 formaE.translate(150,10,0);
 var mallaE = new THREE.Mesh( formaE, material1 );
-mallaE.rotateY(Math.PI*7/4);
 
 
 //Tablero----------------------------------------------------------------------------------------------------------------------------
@@ -649,13 +646,10 @@ var piezaMalla2 = new THREE.Mesh(pieza,material2);
 piezaMalla2.translateX(-120);
 var OrugaM2 = new THREE.Mesh( Oruga, material2 );
 OrugaM2.translateX(-180);
-OrugaM2.rotateY(Math.PI/2);
 var malla52 = new THREE.Mesh( forma, material2 );
 malla52.translateX(-240);
-malla52.rotateY(Math.PI/4);
 var mallaE2 = new THREE.Mesh(formaE,material2);
 mallaE2.translateX(-300);
-mallaE2.rotateY(Math.PI*7/4);
 
 escena.add(malla12);
 escena.add(malla22);
