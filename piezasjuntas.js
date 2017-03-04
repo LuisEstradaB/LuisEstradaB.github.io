@@ -654,9 +654,9 @@ mallaE2.translateX(-500);
 escena.add(malla12);
 escena.add(malla22);
 escena.add(piezaMalla2);
+escena.add(OrugaM2);
 escena.add(malla52);
 escena.add(mallaE2);
-escena.add(malla72);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 600;
