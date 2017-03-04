@@ -60,8 +60,8 @@ var malla2 = new THREE.Mesh( forma2, material2 );
 
 
 //Pieza Union
-var cuerpo = new THREE.DodecahedronGeometry(10);
-cuerpo.translate(0,10,0);
+var cuerpo = new THREE.DodecahedronGeometry(12);
+cuerpo.translate(0,12,0);
 var piernad = new THREE.BoxGeometry(2,10,2);
 piernad.translate(2,0,0);
 var piernai = new THREE.BoxGeometry(2,10,2);
@@ -71,9 +71,9 @@ brazod.translate(8,12,0);
 var brazoi = new THREE.BoxGeometry(8,2,2);
 brazoi.translate(-8,12,0);
 var cuello = new THREE.CylinderGeometry(2,2,4);
-cuello.translate(0,15,0);
+cuello.translate(0,17,0);
 var cabeza = new THREE.SphereGeometry(6);
-cabeza.translate(0,22,0);
+cabeza.translate(0,25,0);
 
 var cuerpoMalla = new THREE.Mesh(cuerpo);
 var piernadMalla = new THREE.Mesh(piernad);
