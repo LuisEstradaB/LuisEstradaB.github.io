@@ -1,7 +1,7 @@
 var puntos = [];
 
 for ( var i = 0; i < 10; i ++ ) {
-    puntos.push( new THREE.Vector2( (7/9)*i , i ) );
+    puntos.push( new THREE.Vector2( (9/9)*i , i ) );
 }
 for ( var i = 10; i < 19; i ++ ) {
     puntos.push( new THREE.Vector2( 10-(1/3)*i , i ) );
