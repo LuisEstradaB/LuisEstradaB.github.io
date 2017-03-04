@@ -55,7 +55,7 @@ for ( var i = 23; i < 30; i ++ ) {
 }
 
 var forma2 = new THREE.LatheGeometry(puntos);
-forma2.translate(50,5,0);
+forma2.translate(30,5,0);
 
 var malla2 = new THREE.Mesh( forma2, material1 );
 
@@ -93,7 +93,7 @@ pieza.merge(brazodMalla.geometry,brazodMalla.matrix);
 pieza.merge(brazoiMalla.geometry,brazoiMalla.matrix);
 pieza.merge(cuelloMalla.geometry,cuelloMalla.matrix);
 pieza.merge(cabezaMalla.geometry,cabezaMalla.matrix);
-pieza.translate(100,10,0);
+pieza.translate(60,10,0);
 
 var piezaMalla = new THREE.Mesh(pieza,material1);
 
@@ -183,7 +183,7 @@ Oruga.merge(PataAtras3M.geometry, PataAtras3M.matrix);
 Oruga.merge(PataAtras4M.geometry, PataAtras4M.matrix);
 
 //var material = new THREE.MeshNormalMaterial();
-Oruga.translate(150,10,0);
+Oruga.translate(90,10,0);
 var OrugaM = new THREE.Mesh(Oruga, material1);
 
 
@@ -460,7 +460,7 @@ forma.computeFaceNormals();
 
 //var material = new THREE.MeshNormalMaterial();
 
-forma.translate(200,10,0);
+forma.translate(120,10,0);
 var malla5 = new THREE.Mesh( forma, material1 );
 
 
@@ -617,12 +617,12 @@ formaE.computeFaceNormals();
 
 //var material = new THREE.MeshNormalMaterial();
 
-formaE.translate(250,10,0);
+formaE.translate(150,10,0);
 var mallaE = new THREE.Mesh( formaE, material1 );
 
 
 //Tablero----------------------------------------------------------------------------------------------------------------------------
-var tabla = new THREE.BoxGeometry(400,10,400);
+var tabla = new THREE.BoxGeometry(200,10,200);
 //tabla.translate(0,0,-200);
 //var material4 = new THREE.MeshNormalMaterial();
 var malla7 = new THREE.Mesh(tabla,material2);
@@ -641,15 +641,15 @@ escena.add(malla7);
 var malla12 = new THREE.Mesh( forma1, material2 );
 malla12.translateX(-20);
 var malla22 = new THREE.Mesh( forma2, material2 );
-malla22.translateX(-100);
+malla22.translateX(-60);
 var piezaMalla2 = new THREE.Mesh(pieza,material2);
-piezaMalla2.translateX(-200);
+piezaMalla2.translateX(-120);
 var OrugaM2 = new THREE.Mesh( Oruga, material2 );
-OrugaM2.translateX(-300);
+OrugaM2.translateX(-180);
 var malla52 = new THREE.Mesh( forma, material2 );
-malla52.translateX(-400);
+malla52.translateX(-240);
 var mallaE2 = new THREE.Mesh(formaE,material2);
-mallaE2.translateX(-500);
+mallaE2.translateX(-300);
 
 escena.add(malla12);
 escena.add(malla22);
@@ -659,7 +659,7 @@ escena.add(malla52);
 escena.add(mallaE2);
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 600;
+camara.position.z = 400;
 //camara.position.y = 300;
 
 renderizador = new THREE.WebGLRenderer();
