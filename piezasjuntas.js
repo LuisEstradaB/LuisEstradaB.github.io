@@ -60,8 +60,8 @@ var malla2 = new THREE.Mesh( forma2, material2 );
 
 
 //Pieza Union
-var cuerpo = new THREE.DodecahedronGeometry(12);
-cuerpo.translate(0,12,0);
+var cuerpo = new THREE.DodecahedronGeometry(10);
+cuerpo.translate(0,10,0);
 var piernad = new THREE.BoxGeometry(2,10,2);
 piernad.translate(2,0,0);
 var piernai = new THREE.BoxGeometry(2,10,2);
