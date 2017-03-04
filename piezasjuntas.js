@@ -1,6 +1,6 @@
 //Pieza Extrusion
 var c = new THREE.Color("rgb(255, 0, 0)");
-var material1 = new THREE.MeshNormalMaterial();
+var material1 = new THREE.MeshBasicMaterial();
 material1.color=c;
 
 var figura = new THREE.Shape();
