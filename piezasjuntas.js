@@ -57,7 +57,7 @@ for ( var i = 23; i < 30; i ++ ) {
 //puntos.push( new THREE.Vector2( 0 , 28 ) );
 
 var forma2 = new THREE.LatheGeometry(puntos);
-forma2.translate(50,8,0);
+forma2.translate(50,5,0);
 
 //var material2 = new THREE.MeshNormalMaterial();
 
@@ -120,8 +120,9 @@ escena.add(piezaMalla);
 escena.add(malla4);
 
 
-forma1.translate(-20,0,0);
+//forma1.translate(-20,0,0);
 var malla12 = new THREE.Mesh( forma1, material2 );
+malla12.translate(-20,0,0);
 forma2.translate(-100,0,0);
 var malla22 = new THREE.Mesh( forma2, material2 );
 pieza.translate(-200,0,0);
