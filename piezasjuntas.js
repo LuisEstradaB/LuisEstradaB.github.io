@@ -37,8 +37,6 @@ var forma1 = new THREE.ExtrudeGeometry( figura,
                                        
 //var material1 = new THREE.MeshNormalMaterial();
 var malla1 = new THREE.Mesh( forma1, material1 );
-forma1.translate(-20,0,0);
-var malla12 = new THREE.Mesh( forma1, material2 );
 
 
 //Pieza Revolucion
@@ -64,8 +62,6 @@ forma2.translate(50,8,0);
 //var material2 = new THREE.MeshNormalMaterial();
 
 var malla2 = new THREE.Mesh( forma2, material1 );
-forma2.translate(-50,8,0);
-var malla22 = new THREE.Mesh( forma2, material2 );
 
 
 //Pieza Union
@@ -109,8 +105,6 @@ pieza.translate(100,10,0);
 //material3.color=c;
 
 var piezaMalla = new THREE.Mesh(pieza,material1);
-pieza.translate(-100,10,0);
-var piezaMalla2 = new THREE.Mesh(pieza,material2);
 
 
 var tabla = new THREE.BoxGeometry(200,10,200);
@@ -124,6 +118,15 @@ escena.add(malla1);
 escena.add(malla2);
 escena.add(piezaMalla);
 escena.add(malla4);
+
+
+forma1.translate(-20,0,0);
+var malla12 = new THREE.Mesh( forma1, material2 );
+forma2.translate(-50,8,0);
+var malla22 = new THREE.Mesh( forma2, material2 );
+pieza.translate(-100,10,0);
+var piezaMalla2 = new THREE.Mesh(pieza,material2);
+
 escena.add(malla12);
 escena.add(malla22);
 escena.add(piezaMalla2);
