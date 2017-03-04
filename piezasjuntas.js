@@ -122,9 +122,9 @@ escena.add(malla4);
 
 forma1.translate(-20,0,0);
 var malla12 = new THREE.Mesh( forma1, material2 );
-forma2.translate(-100,8,0);
+forma2.translate(-100,0,0);
 var malla22 = new THREE.Mesh( forma2, material2 );
-pieza.translate(-200,10,0);
+pieza.translate(-200,0,0);
 var piezaMalla2 = new THREE.Mesh(pieza,material2);
 
 escena.add(malla12);
@@ -132,7 +132,7 @@ escena.add(malla22);
 escena.add(piezaMalla2);
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 300;
+camara.position.z = 500;
 //camara.position.y = 300;
 
 renderizador = new THREE.WebGLRenderer();
