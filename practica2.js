@@ -21,12 +21,12 @@ for(var i=0;i<=4;i++){
 
 var escena = new THREE.Scene();
 for(var k=0;k<malla.length;k++){
-  malla[k].rotateX(Math.PI/2);
+  //malla[k].rotateX(Math.PI/2);
   escena.add(malla[k]);
 }
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 50;
+camara.position.z = 100;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
