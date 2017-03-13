@@ -143,7 +143,7 @@ escena.add( cubo24 );
 escena.add( cubo25 );
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 25;
+camara.position.y = 50;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
