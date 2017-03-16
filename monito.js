@@ -1,8 +1,8 @@
 var cuerpo = new THREE.BoxGeometry(3,3,1);
 cuerpo.translate(0,3,0);
-var piernad = new THREE.CylinderGeometry(0.5,0.5,2);
+var piernad = new THREE.CylinderGeometry(0.5,0.5,3);
 piernad.translate(1,0,0);
-var piernai = new THREE.CylinderGeometry(0.5,0.5,2);
+var piernai = new THREE.CylinderGeometry(0.5,0.5,3);
 piernai.translate(-1,0,0);
 var brazod = new THREE.CylinderGeometry(0.5,0.5,3);
 brazod.rotateZ(Math.PI/2);
