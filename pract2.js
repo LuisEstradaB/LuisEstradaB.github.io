@@ -110,6 +110,93 @@ var cubo25 = new THREE.Mesh( geometry, material25 );
 cubo25.translateX(4);
 cubo25.translateZ(4);
 
+//--------------------------------------------------------------------------------------------------------------------------------------
+//Monito
+var cuerpo = new THREE.BoxGeometry(3,3,1);
+cuerpo.translate(0,3,0);
+var piernad = new THREE.CylinderGeometry(0.5,0.5,3);
+piernad.translate(1,0,0);
+var piernai = new THREE.CylinderGeometry(0.5,0.5,3);
+piernai.translate(-1,0,0);
+var brazod = new THREE.CylinderGeometry(0.5,0.5,3);
+brazod.rotateZ(Math.PI/2);
+brazod.translate(2,3,0);
+var brazoi = new THREE.CylinderGeometry(0.5,0.5,3);
+brazoi.rotateZ(Math.PI/2);
+brazoi.translate(-2,3,0);
+var cuello = new THREE.CylinderGeometry(0.5,0.5,1);
+cuello.translate(0,5,0);
+var cabeza = new THREE.SphereGeometry(2);
+cabeza.translate(0,7,0);
+
+var cuerpoMalla = new THREE.Mesh(cuerpo);
+var piernadMalla = new THREE.Mesh(piernad);
+var piernaiMalla = new THREE.Mesh(piernai);
+var brazodMalla = new THREE.Mesh(brazod);
+var brazoiMalla = new THREE.Mesh(brazoi);
+var cuelloMalla = new THREE.Mesh(cuello);
+var cabezaMalla = new THREE.Mesh(cabeza);
+
+var pieza = new THREE.Geometry();
+
+pieza.merge(cuerpoMalla.geometry,cuerpoMalla.matrix);
+pieza.merge(piernadMalla.geometry,piernadMalla.matrix);
+pieza.merge(piernaiMalla.geometry,piernaiMalla.matrix);
+pieza.merge(brazodMalla.geometry,brazodMalla.matrix);
+pieza.merge(brazoiMalla.geometry,brazoiMalla.matrix);
+pieza.merge(cuelloMalla.geometry,cuelloMalla.matrix);
+pieza.merge(cabezaMalla.geometry,cabezaMalla.matrix);
+
+var material = new THREE.MeshNormalMaterial();
+
+var piezaMalla = new THREE.Mesh(pieza,material);
+ piezaMalla.translateX(2);
+ piezaMalla.translateY(1);
+ piezaMalla.translateZ(2);
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+//Tortuga
+var Cabeza = new THREE.SphereGeometry( 1 );
+var Caparazon = new THREE.SphereGeometry( 2, 32, 32, 0, Math.PI*2, -Math.PI/2, Math.PI/2 );
+var PataFI = new THREE.CylinderGeometry( 0.4, 0.25, 0.8 );
+var PataFD = new THREE.CylinderGeometry( 0.4, 0.25, 0.8 );
+var PataTI = new THREE.CylinderGeometry( 0.4, 0.25, 0.8 );
+var PataTD = new THREE.CylinderGeometry( 0.4, 0.25, 0.8 );
+var Cola = new THREE.ConeGeometry( 0.4, 1.4, 32 );
+
+Cabeza.translate( 2, 1, 0 );
+PataTI.translate( -0.75, -0.4, -0.75 );
+PataTD.translate( -0.75, -0.4,  0.75 );
+PataFI.translate(  0.75, -0.4, -0.75 );
+PataFD.translate(  0.75, -0.4,  0.75 );
+//Cola.translate( -1.3, 0.7, 0 );
+Cola.translate( 0, 2.2, 0 );
+
+var CabezaM = new THREE.Mesh(Cabeza);
+var CaparazonM = new THREE.Mesh(Caparazon);
+var PataTIM = new THREE.Mesh(PataTI);
+var PataTDM = new THREE.Mesh(PataTD);
+var PataFIM = new THREE.Mesh(PataFI);
+var PataFDM = new THREE.Mesh(PataFD);
+var ColaM = new THREE.Mesh(Cola);
+//ColaM.rotateZ(Math.PI*3/8);
+
+var Tortuga = new THREE.Geometry();
+
+Tortuga.merge(CabezaM.geometry, CabezaM.matrix);
+Tortuga.merge(ColaM.geometry, ColaM.matrix);
+Tortuga.merge(CaparazonM.geometry, CaparazonM.matrix);
+Tortuga.merge(PataTIM.geometry, PataTIM.matrix);
+Tortuga.merge(PataTDM.geometry, PataTDM.matrix);
+Tortuga.merge(PataFIM.geometry, PataFIM.matrix);
+Tortuga.merge(PataFDM.geometry, PataFDM.matrix);
+
+var materialt = new THREE.MeshNormalMaterial();
+var TortugaM = new THREE.Mesh(Tortuga, materialt);
+ TortugaM.translateX(-2);
+ TortugaM.translateY(1);
+ TortugaM.translateZ(-2);
+
 var escena = new THREE.Scene();
 
 escena.add( cubo01 );
@@ -142,15 +229,18 @@ escena.add( cubo23 );
 escena.add( cubo24 );
 escena.add( cubo25 );
 
+escena.add(piezaMalla);
+escena.add(TortugaM);
+
 var campoVision = 60;
 var relacionAspecto = window.innerWidth/window.innerHeight;
 var planoCercano = 1;
 var planoLejano = 1000;
 
 var camara = new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano);
-//camara.position.z = 15;
-camara.rotateX(-Math.PI/2);
-camara.position.y = 35;
+camara.position.z = 30;
+//camara.rotateX(-Math.PI/2);
+camara.position.y = 2;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth,window.innerHeight);
