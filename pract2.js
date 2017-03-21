@@ -241,17 +241,17 @@ var camara = new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercan
 
 var camara = new THREE.OrthographicCamera();
 
-camara.left = window.innerWidth/-16;
-camara.right = window.innerWidth/16;
-camara.top = window.innerHeight/16;
-camara.bottom = window.innerHeight/-16;
+camara.left = window.innerWidth/-20;
+camara.right = window.innerWidth/20;
+camara.top = window.innerHeight/20;
+camara.bottom = window.innerHeight/-20;
 camara.near = 0.1;
 camara.far = 100;
 camara.updateProjectionMatrix();
 
-camara.position.z = 1;
+camara.position.z = 10;
 //camara.rotateX(-Math.PI/2);
-//camara.position.y = 2;
+camara.position.y = 2;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth,window.innerHeight);
