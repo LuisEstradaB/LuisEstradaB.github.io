@@ -249,8 +249,8 @@ camara.near = 0.1;
 camara.far = 100;
 camara.updateProjectionMatrix();
 
-camara.position.z = 10;
 camara.rotateX(-Math.PI/8);
+camara.position.z = 10;
 camara.position.y = 20;
 
 var renderizador = new THREE.WebGLRenderer();
