@@ -263,7 +263,7 @@ camara.far = 100;
 camara.updateProjectionMatrix();
 
 //camara.rotateX=-Math.PI/4;
-camara.position.z = 10;
+camara.position.z = 30;
 camara.position.y = 2;
 camara.updateProjectionMatrix();
 
