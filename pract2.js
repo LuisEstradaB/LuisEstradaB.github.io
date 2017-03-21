@@ -241,10 +241,10 @@ var camara = new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercan
 
 var camara = new THREE.OrthographicCamera();
 
-camara.left = window.innerWidth/-20;
-camara.right = window.innerWidth/20;
-camara.top = window.innerHeight/20;
-camara.bottom = window.innerHeight/-20;
+camara.left = window.innerWidth/-32;
+camara.right = window.innerWidth/32;
+camara.top = window.innerHeight/32;
+camara.bottom = window.innerHeight/-32;
 camara.near = 0.1;
 camara.far = 100;
 camara.updateProjectionMatrix();
