@@ -254,15 +254,15 @@ camara.rotateX(-Math.PI/4);
 
 var camara = new THREE.OrthographicCamera();
 
-camara.left = -30;
-camara.right = 30;
-camara.top = 30;
-camara.bottom = -30;
+camara.left = -20;
+camara.right = 20;
+camara.top = 20;
+camara.bottom = -20;
 camara.near = 0.1;
 camara.far = 100;
 camara.updateProjectionMatrix();
 
-camara.position.z = 5;
+camara.position.z = 10;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth,window.innerHeight);
