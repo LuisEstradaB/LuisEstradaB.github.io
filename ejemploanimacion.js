@@ -1,6 +1,6 @@
 function setup() {
   escena = new THREE.Scene();
-  camara = ne THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
+  camara = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
   
   camara.position.z = 5;
   
