@@ -265,6 +265,7 @@ camara.updateProjectionMatrix();
 //camara.rotateX=-Math.PI/4;
 camara.position.z = 10;
 camara.position.y = 2;
+camara.updateProjectionMatrix();
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(window.innerWidth,window.innerHeight);
