@@ -232,12 +232,23 @@ escena.add( cubo25 );
 escena.add(piezaMalla);
 escena.add(TortugaM);
 
-var campoVision = 60;
+/*var campoVision = 60;
 var relacionAspecto = window.innerWidth/window.innerHeight;
 var planoCercano = 1;
 var planoLejano = 1000;
 
-var camara = new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano);
+var camara = new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano);*/
+
+var camara = new THREE.OrthographicCamera();
+
+camara.left = window.innerWidth/-2;
+camara.right = window.innerWidth/2;
+camara.top = window.innerHeight/2;
+camara.bottom = window.innerHeight/-2;
+camara.near = 1;
+camara.far = 100;
+camara.updateProjectionMatrix();
+
 camara.position.z = 30;
 //camara.rotateX(-Math.PI/2);
 camara.position.y = 2;
