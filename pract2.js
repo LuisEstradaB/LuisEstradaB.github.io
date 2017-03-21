@@ -239,8 +239,8 @@ var planoLejano = 1000;
 
 var camara = new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano);
 
-camara.position.z = 30;
-camara.position.y = 2;
+camara.position.y = 25;
+camara.rotateX(-Math.PI/2);
 
 /*var camara = new THREE.OrthographicCamera();
 
