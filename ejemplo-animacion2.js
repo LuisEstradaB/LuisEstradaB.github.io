@@ -4,7 +4,7 @@ function listener(){
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
-function pushar(){
+function pushar(e){
   if(e.keyCode==65)
     camara.postion.z++;
   else if(e.keyCode==81)
