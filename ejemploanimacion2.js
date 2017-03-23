@@ -5,9 +5,9 @@ function listener(){
 }
 
 function pushar(e){
-  if(e.keyCode === 65)
+  if(e.keyCode === 113)
     camara.position.z++;
-  else if(e.keyCode === 81)
+  else if(e.keyCode === 97)
     camara.position.z--;
 }
 
@@ -21,7 +21,7 @@ function setup() {
   renderer.setSize( window.innerWidth, window.innerHeight )
   document.body.appendChild(renderer.domElement);
   
-  malla = new THREE.Mesh( new THREE.SphereGeometry( 1 ), new THREE.MeshNormalMaterial() );
+  malla = new THREE.Mesh( new THREE.BoxGeometry( 1, 1, 1 ), new THREE.MeshNormalMaterial() );
   escena.add(malla);
   
   var tipoEvento = 'resize';
