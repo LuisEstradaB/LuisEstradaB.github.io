@@ -1,6 +1,6 @@
 function listener(){
   camara.aspect = window.innerWidth / window.innerHeight;
-  camara.updateProjectionMatrix;
+  camara.updateProjectionMatrix();
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
