@@ -12,7 +12,7 @@ function setup() {
   escena.add(malla);
 }
 
-function loop()[
+function loop(){
   requestAnimationFrame( loop );
   
   malla.rotation.x += 0.01;
