@@ -5,11 +5,10 @@ function listener(){
 }
 
 function pushar(e){
-  if(e.keyCode==65)
-    camara.postion.z++;
-  else if(e.keyCode==81)
+  if(e.keyCode == 65)
+    camara.position.z++;
+  else if(e.keyCode == 81)
     camara.position.z--;
-  camara.updateProjectionMatrix();
 }
 
 function setup() {
