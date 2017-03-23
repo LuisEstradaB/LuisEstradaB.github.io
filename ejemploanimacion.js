@@ -1,10 +1,16 @@
+function listener(){
+  camara.aspect = window.innerWidth / window.innerHeight;
+  camara.updateProjectionMatrix;
+  renderer.setSize( window.innerWidth, window.innerHeight );
+}
+
 function setup() {
   escena = new THREE.Scene();
   camara = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
   
   camara.position.z = 5;
   
-  renderer = new THREE.WEBGLRenderer();
+  renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight )
   document.body.appendChild(renderer.domElement);
   
