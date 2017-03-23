@@ -16,6 +16,11 @@ function setup() {
   
   malla = new THREE.Mesh( new THREE.SphereGeometry( 1 ), new THREE.MeshNormalMaterial() );
   escena.add(malla);
+  
+  var tipoEvento = 'resize';
+  var capturar = false;
+  window.addEventListener( tipoEvento, listener, capturar );
+  
 }
 
 function loop(){
