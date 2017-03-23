@@ -6,9 +6,9 @@ function listener(){
 
 function pushar(e){
   if(e.keyCode === 65)
-    camara.position.z++;
+    camara.position.z += 1;
   else if(e.keyCode === 81)
-    camara.position.z--;
+    camara.position.z -= 1;
 }
 
 function setup() {
