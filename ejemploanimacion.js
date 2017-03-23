@@ -9,6 +9,7 @@ function pushar(){
     camara.postion.z++;
   else if(e.keyCode==81)
     camara.position.z--;
+  camara.updateProjectionMatrix();
 }
 
 function setup() {
