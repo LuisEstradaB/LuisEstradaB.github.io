@@ -32,4 +32,4 @@ function loop(){
 var camara, escena, renderer, malla;
 
 setup();
-Loop();
+loop();
