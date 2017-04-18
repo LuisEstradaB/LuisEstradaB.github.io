@@ -23,7 +23,7 @@ renderizador = new THREE.WebGLRenderer();
 
 renderizador.setSize( 600, 600 );
 
-renderizador.ShadowMapEnabled = true;
+renderizador.shadowMapEnabled = true;
 malla.castShadow = true;
 base.recieveShadow = true;
 iluminacion.castShadow = true;
