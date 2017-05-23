@@ -20,7 +20,7 @@ function setup(){
   document.body.appendChild( renderer.domElement );
 }
 
-funtion loop(){
+function loop(){
   var step = 0.01;
   
   cubo1.rotation.x += step;
