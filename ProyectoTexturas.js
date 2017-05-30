@@ -16,7 +16,7 @@ iluminacionAzul.position.z = 28.3;
 THREE.ImageUtils.crossOrigin = '';
 
 var escena = new THREE.Scene();
-var textura = THREE.ImageUtils.loadTexture('brick_diffuse.jpg');
+var textura = THREE.ImageUtils.loadTexture('https://luisestradab.github.io/brick_diffuse.jpg');
 var materialN = new THREE.MeshLambertMaterial( {map: textura} );
 
 
@@ -256,114 +256,114 @@ OrugaM.scale.set(0.05,0.05,0.05);
 var forma = new THREE.Geometry();
 
 //Cuerpo
-forma.vertices.push( new THREE.Vector3( -3,  8, -6 ) ); // Vértice 0 A
-forma.vertices.push( new THREE.Vector3(  3,  8, -6 ) ); // Vértice 1 B
-forma.vertices.push( new THREE.Vector3( -3,  8,  0 ) ); // Vértice 2 C
-forma.vertices.push( new THREE.Vector3(  3,  8,  0 ) ); // Vértice 3 D
-forma.vertices.push( new THREE.Vector3( -3,  4, -6 ) ); // Vértice 4 E
-forma.vertices.push( new THREE.Vector3(  3,  4, -6 ) ); // Vértice 5 F
-forma.vertices.push( new THREE.Vector3( -3,  4,  0 ) ); // Vértice 6 G
-forma.vertices.push( new THREE.Vector3(  3,  4,  0 ) ); // Vértice 7 H
+forma.vertices.push( new THREE.Vector3( -3,  8, -6 ) ); // VÃ©rtice 0 A
+forma.vertices.push( new THREE.Vector3(  3,  8, -6 ) ); // VÃ©rtice 1 B
+forma.vertices.push( new THREE.Vector3( -3,  8,  0 ) ); // VÃ©rtice 2 C
+forma.vertices.push( new THREE.Vector3(  3,  8,  0 ) ); // VÃ©rtice 3 D
+forma.vertices.push( new THREE.Vector3( -3,  4, -6 ) ); // VÃ©rtice 4 E
+forma.vertices.push( new THREE.Vector3(  3,  4, -6 ) ); // VÃ©rtice 5 F
+forma.vertices.push( new THREE.Vector3( -3,  4,  0 ) ); // VÃ©rtice 6 G
+forma.vertices.push( new THREE.Vector3(  3,  4,  0 ) ); // VÃ©rtice 7 H
 
 //Cabeza
-forma.vertices.push( new THREE.Vector3( -3, 10,  0 ) ); // Vértice 8  A
-forma.vertices.push( new THREE.Vector3(  3, 10,  0 ) ); // Vértice 9  B
-forma.vertices.push( new THREE.Vector3( -3, 10,  6 ) ); // Vértice 10 C
-forma.vertices.push( new THREE.Vector3(  3, 10,  6 ) ); // Vértice 11 D
-forma.vertices.push( new THREE.Vector3( -3,  4,  0 ) ); // Vértice 12 E
-forma.vertices.push( new THREE.Vector3(  3,  4,  0 ) ); // Vértice 13 F
-forma.vertices.push( new THREE.Vector3( -3,  4,  6 ) ); // Vértice 14 G
-forma.vertices.push( new THREE.Vector3(  3,  4,  6 ) ); // Vértice 15 H
+forma.vertices.push( new THREE.Vector3( -3, 10,  0 ) ); // VÃ©rtice 8  A
+forma.vertices.push( new THREE.Vector3(  3, 10,  0 ) ); // VÃ©rtice 9  B
+forma.vertices.push( new THREE.Vector3( -3, 10,  6 ) ); // VÃ©rtice 10 C
+forma.vertices.push( new THREE.Vector3(  3, 10,  6 ) ); // VÃ©rtice 11 D
+forma.vertices.push( new THREE.Vector3( -3,  4,  0 ) ); // VÃ©rtice 12 E
+forma.vertices.push( new THREE.Vector3(  3,  4,  0 ) ); // VÃ©rtice 13 F
+forma.vertices.push( new THREE.Vector3( -3,  4,  6 ) ); // VÃ©rtice 14 G
+forma.vertices.push( new THREE.Vector3(  3,  4,  6 ) ); // VÃ©rtice 15 H
 
 //Cola
-forma.vertices.push( new THREE.Vector3( -1,  8, -10 ) ); // Vértice 16 A
-forma.vertices.push( new THREE.Vector3(  1,  8, -10 ) ); // Vértice 17 B
-forma.vertices.push( new THREE.Vector3( -1,  8,  -6 ) ); // Vértice 18 C
-forma.vertices.push( new THREE.Vector3(  1,  8,  -6 ) ); // Vértice 19 D
-forma.vertices.push( new THREE.Vector3( -1,  6, -10 ) ); // Vértice 20 E
-forma.vertices.push( new THREE.Vector3(  1,  6, -10 ) ); // Vértice 21 F
-forma.vertices.push( new THREE.Vector3( -1,  6,  -6 ) ); // Vértice 22 G
-forma.vertices.push( new THREE.Vector3(  1,  6,  -6 ) ); // Vértice 23 H
+forma.vertices.push( new THREE.Vector3( -1,  8, -10 ) ); // VÃ©rtice 16 A
+forma.vertices.push( new THREE.Vector3(  1,  8, -10 ) ); // VÃ©rtice 17 B
+forma.vertices.push( new THREE.Vector3( -1,  8,  -6 ) ); // VÃ©rtice 18 C
+forma.vertices.push( new THREE.Vector3(  1,  8,  -6 ) ); // VÃ©rtice 19 D
+forma.vertices.push( new THREE.Vector3( -1,  6, -10 ) ); // VÃ©rtice 20 E
+forma.vertices.push( new THREE.Vector3(  1,  6, -10 ) ); // VÃ©rtice 21 F
+forma.vertices.push( new THREE.Vector3( -1,  6,  -6 ) ); // VÃ©rtice 22 G
+forma.vertices.push( new THREE.Vector3(  1,  6,  -6 ) ); // VÃ©rtice 23 H
 
 //Hocico
-forma.vertices.push( new THREE.Vector3( -3,  6,  6 ) ); // Vértice 24 A
-forma.vertices.push( new THREE.Vector3(  3,  6,  6 ) ); // Vértice 25 B
-forma.vertices.push( new THREE.Vector3( -3,  6,  8 ) ); // Vértice 26 C
-forma.vertices.push( new THREE.Vector3(  3,  6,  8 ) ); // Vértice 27 D
-forma.vertices.push( new THREE.Vector3( -3,  4,  6 ) ); // Vértice 28 E
-forma.vertices.push( new THREE.Vector3(  3,  4,  6 ) ); // Vértice 29 F
-forma.vertices.push( new THREE.Vector3( -3,  4,  8 ) ); // Vértice 30 G
-forma.vertices.push( new THREE.Vector3(  3,  4,  8 ) ); // Vértice 31 H
+forma.vertices.push( new THREE.Vector3( -3,  6,  6 ) ); // VÃ©rtice 24 A
+forma.vertices.push( new THREE.Vector3(  3,  6,  6 ) ); // VÃ©rtice 25 B
+forma.vertices.push( new THREE.Vector3( -3,  6,  8 ) ); // VÃ©rtice 26 C
+forma.vertices.push( new THREE.Vector3(  3,  6,  8 ) ); // VÃ©rtice 27 D
+forma.vertices.push( new THREE.Vector3( -3,  4,  6 ) ); // VÃ©rtice 28 E
+forma.vertices.push( new THREE.Vector3(  3,  4,  6 ) ); // VÃ©rtice 29 F
+forma.vertices.push( new THREE.Vector3( -3,  4,  8 ) ); // VÃ©rtice 30 G
+forma.vertices.push( new THREE.Vector3(  3,  4,  8 ) ); // VÃ©rtice 31 H
 
 //Pata trasera derecha
-forma.vertices.push( new THREE.Vector3( -3,  4, -6 ) ); // Vértice 32 A
-forma.vertices.push( new THREE.Vector3( -1,  4, -6 ) ); // Vértice 33 B
-forma.vertices.push( new THREE.Vector3( -3,  4, -4 ) ); // Vértice 34 C
-forma.vertices.push( new THREE.Vector3( -1,  4, -4 ) ); // Vértice 35 D
-forma.vertices.push( new THREE.Vector3( -3,  0, -6 ) ); // Vértice 36 E
-forma.vertices.push( new THREE.Vector3( -1,  0, -6 ) ); // Vértice 37 F
-forma.vertices.push( new THREE.Vector3( -3,  0, -4 ) ); // Vértice 38 G
-forma.vertices.push( new THREE.Vector3( -1,  0, -4 ) ); // Vértice 39 H
+forma.vertices.push( new THREE.Vector3( -3,  4, -6 ) ); // VÃ©rtice 32 A
+forma.vertices.push( new THREE.Vector3( -1,  4, -6 ) ); // VÃ©rtice 33 B
+forma.vertices.push( new THREE.Vector3( -3,  4, -4 ) ); // VÃ©rtice 34 C
+forma.vertices.push( new THREE.Vector3( -1,  4, -4 ) ); // VÃ©rtice 35 D
+forma.vertices.push( new THREE.Vector3( -3,  0, -6 ) ); // VÃ©rtice 36 E
+forma.vertices.push( new THREE.Vector3( -1,  0, -6 ) ); // VÃ©rtice 37 F
+forma.vertices.push( new THREE.Vector3( -3,  0, -4 ) ); // VÃ©rtice 38 G
+forma.vertices.push( new THREE.Vector3( -1,  0, -4 ) ); // VÃ©rtice 39 H
 
 //Pata trasera izquierda
-forma.vertices.push( new THREE.Vector3( 1,  4, -6 ) ); // Vértice 40 A
-forma.vertices.push( new THREE.Vector3( 3,  4, -6 ) ); // Vértice 41 B
-forma.vertices.push( new THREE.Vector3( 1,  4, -4 ) ); // Vértice 42 C
-forma.vertices.push( new THREE.Vector3( 3,  4, -4 ) ); // Vértice 43 D
-forma.vertices.push( new THREE.Vector3( 1,  0, -6 ) ); // Vértice 44 E
-forma.vertices.push( new THREE.Vector3( 3,  0, -6 ) ); // Vértice 45 F
-forma.vertices.push( new THREE.Vector3( 1,  0, -4 ) ); // Vértice 46 G
-forma.vertices.push( new THREE.Vector3( 3,  0, -4 ) ); // Vértice 47 H
+forma.vertices.push( new THREE.Vector3( 1,  4, -6 ) ); // VÃ©rtice 40 A
+forma.vertices.push( new THREE.Vector3( 3,  4, -6 ) ); // VÃ©rtice 41 B
+forma.vertices.push( new THREE.Vector3( 1,  4, -4 ) ); // VÃ©rtice 42 C
+forma.vertices.push( new THREE.Vector3( 3,  4, -4 ) ); // VÃ©rtice 43 D
+forma.vertices.push( new THREE.Vector3( 1,  0, -6 ) ); // VÃ©rtice 44 E
+forma.vertices.push( new THREE.Vector3( 3,  0, -6 ) ); // VÃ©rtice 45 F
+forma.vertices.push( new THREE.Vector3( 1,  0, -4 ) ); // VÃ©rtice 46 G
+forma.vertices.push( new THREE.Vector3( 3,  0, -4 ) ); // VÃ©rtice 47 H
 
 //Pata delantera derecha
-forma.vertices.push( new THREE.Vector3( -3,  4,  0 ) ); // Vértice 48 A
-forma.vertices.push( new THREE.Vector3( -1,  4,  0 ) ); // Vértice 49 B
-forma.vertices.push( new THREE.Vector3( -3,  4,  2 ) ); // Vértice 50 C
-forma.vertices.push( new THREE.Vector3( -1,  4,  2 ) ); // Vértice 51 D
-forma.vertices.push( new THREE.Vector3( -3,  0,  0 ) ); // Vértice 52 E
-forma.vertices.push( new THREE.Vector3( -1,  0,  0 ) ); // Vértice 53 F
-forma.vertices.push( new THREE.Vector3( -3,  0,  2 ) ); // Vértice 54 G
-forma.vertices.push( new THREE.Vector3( -1,  0,  2 ) ); // Vértice 55 H
+forma.vertices.push( new THREE.Vector3( -3,  4,  0 ) ); // VÃ©rtice 48 A
+forma.vertices.push( new THREE.Vector3( -1,  4,  0 ) ); // VÃ©rtice 49 B
+forma.vertices.push( new THREE.Vector3( -3,  4,  2 ) ); // VÃ©rtice 50 C
+forma.vertices.push( new THREE.Vector3( -1,  4,  2 ) ); // VÃ©rtice 51 D
+forma.vertices.push( new THREE.Vector3( -3,  0,  0 ) ); // VÃ©rtice 52 E
+forma.vertices.push( new THREE.Vector3( -1,  0,  0 ) ); // VÃ©rtice 53 F
+forma.vertices.push( new THREE.Vector3( -3,  0,  2 ) ); // VÃ©rtice 54 G
+forma.vertices.push( new THREE.Vector3( -1,  0,  2 ) ); // VÃ©rtice 55 H
 
 //Pata delantera izquierda
-forma.vertices.push( new THREE.Vector3( 1,  4,  0 ) ); // Vértice 56 A
-forma.vertices.push( new THREE.Vector3( 3,  4,  0 ) ); // Vértice 57 B
-forma.vertices.push( new THREE.Vector3( 1,  4,  2 ) ); // Vértice 58 C
-forma.vertices.push( new THREE.Vector3( 3,  4,  2 ) ); // Vértice 59 D
-forma.vertices.push( new THREE.Vector3( 1,  0,  0 ) ); // Vértice 60 E
-forma.vertices.push( new THREE.Vector3( 3,  0,  0 ) ); // Vértice 61 F
-forma.vertices.push( new THREE.Vector3( 1,  0,  2 ) ); // Vértice 62 G
-forma.vertices.push( new THREE.Vector3( 3,  0,  2 ) ); // Vértice 63 H
+forma.vertices.push( new THREE.Vector3( 1,  4,  0 ) ); // VÃ©rtice 56 A
+forma.vertices.push( new THREE.Vector3( 3,  4,  0 ) ); // VÃ©rtice 57 B
+forma.vertices.push( new THREE.Vector3( 1,  4,  2 ) ); // VÃ©rtice 58 C
+forma.vertices.push( new THREE.Vector3( 3,  4,  2 ) ); // VÃ©rtice 59 D
+forma.vertices.push( new THREE.Vector3( 1,  0,  0 ) ); // VÃ©rtice 60 E
+forma.vertices.push( new THREE.Vector3( 3,  0,  0 ) ); // VÃ©rtice 61 F
+forma.vertices.push( new THREE.Vector3( 1,  0,  2 ) ); // VÃ©rtice 62 G
+forma.vertices.push( new THREE.Vector3( 3,  0,  2 ) ); // VÃ©rtice 63 H
 
 //Oreja derecha
-forma.vertices.push( new THREE.Vector3( -3, 12,  2 ) ); // Vértice 64 A
-forma.vertices.push( new THREE.Vector3( -1, 12,  2 ) ); // Vértice 65 B
-forma.vertices.push( new THREE.Vector3( -3, 12,  4 ) ); // Vértice 66 C
-forma.vertices.push( new THREE.Vector3( -1, 12,  4 ) ); // Vértice 67 D
-forma.vertices.push( new THREE.Vector3( -3, 10,  2 ) ); // Vértice 68 E
-forma.vertices.push( new THREE.Vector3( -1, 10,  2 ) ); // Vértice 69 F
-forma.vertices.push( new THREE.Vector3( -3, 10,  4 ) ); // Vértice 70 G
-forma.vertices.push( new THREE.Vector3( -1, 10,  4 ) ); // Vértice 71 H
+forma.vertices.push( new THREE.Vector3( -3, 12,  2 ) ); // VÃ©rtice 64 A
+forma.vertices.push( new THREE.Vector3( -1, 12,  2 ) ); // VÃ©rtice 65 B
+forma.vertices.push( new THREE.Vector3( -3, 12,  4 ) ); // VÃ©rtice 66 C
+forma.vertices.push( new THREE.Vector3( -1, 12,  4 ) ); // VÃ©rtice 67 D
+forma.vertices.push( new THREE.Vector3( -3, 10,  2 ) ); // VÃ©rtice 68 E
+forma.vertices.push( new THREE.Vector3( -1, 10,  2 ) ); // VÃ©rtice 69 F
+forma.vertices.push( new THREE.Vector3( -3, 10,  4 ) ); // VÃ©rtice 70 G
+forma.vertices.push( new THREE.Vector3( -1, 10,  4 ) ); // VÃ©rtice 71 H
 
 //Oreja izquierda
-forma.vertices.push( new THREE.Vector3( 1, 12,  2 ) ); // Vértice 72 A
-forma.vertices.push( new THREE.Vector3( 3, 12,  2 ) ); // Vértice 73 B
-forma.vertices.push( new THREE.Vector3( 1, 12,  4 ) ); // Vértice 74 C
-forma.vertices.push( new THREE.Vector3( 3, 12,  4 ) ); // Vértice 75 D
-forma.vertices.push( new THREE.Vector3( 1, 10,  2 ) ); // Vértice 76 E
-forma.vertices.push( new THREE.Vector3( 3, 10,  2 ) ); // Vértice 77 F
-forma.vertices.push( new THREE.Vector3( 1, 10,  4 ) ); // Vértice 78 G
-forma.vertices.push( new THREE.Vector3( 3, 10,  4 ) ); // Vértice 79 H
+forma.vertices.push( new THREE.Vector3( 1, 12,  2 ) ); // VÃ©rtice 72 A
+forma.vertices.push( new THREE.Vector3( 3, 12,  2 ) ); // VÃ©rtice 73 B
+forma.vertices.push( new THREE.Vector3( 1, 12,  4 ) ); // VÃ©rtice 74 C
+forma.vertices.push( new THREE.Vector3( 3, 12,  4 ) ); // VÃ©rtice 75 D
+forma.vertices.push( new THREE.Vector3( 1, 10,  2 ) ); // VÃ©rtice 76 E
+forma.vertices.push( new THREE.Vector3( 3, 10,  2 ) ); // VÃ©rtice 77 F
+forma.vertices.push( new THREE.Vector3( 1, 10,  4 ) ); // VÃ©rtice 78 G
+forma.vertices.push( new THREE.Vector3( 3, 10,  4 ) ); // VÃ©rtice 79 H
 
 //Lengua
-forma.vertices.push( new THREE.Vector3( -1,  4,  4 ) ); // Vértice 80 A
-forma.vertices.push( new THREE.Vector3(  1,  4,  4 ) ); // Vértice 81 B
-forma.vertices.push( new THREE.Vector3( -1,  4,  6 ) ); // Vértice 82 C
-forma.vertices.push( new THREE.Vector3(  1,  4,  6 ) ); // Vértice 83 D
-forma.vertices.push( new THREE.Vector3( -1,  2,  4 ) ); // Vértice 84 E
-forma.vertices.push( new THREE.Vector3(  1,  2,  4 ) ); // Vértice 85 F
-forma.vertices.push( new THREE.Vector3( -1,  2,  6 ) ); // Vértice 86 G
-forma.vertices.push( new THREE.Vector3(  1,  2,  6 ) ); // Vértice 87 H
+forma.vertices.push( new THREE.Vector3( -1,  4,  4 ) ); // VÃ©rtice 80 A
+forma.vertices.push( new THREE.Vector3(  1,  4,  4 ) ); // VÃ©rtice 81 B
+forma.vertices.push( new THREE.Vector3( -1,  4,  6 ) ); // VÃ©rtice 82 C
+forma.vertices.push( new THREE.Vector3(  1,  4,  6 ) ); // VÃ©rtice 83 D
+forma.vertices.push( new THREE.Vector3( -1,  2,  4 ) ); // VÃ©rtice 84 E
+forma.vertices.push( new THREE.Vector3(  1,  2,  4 ) ); // VÃ©rtice 85 F
+forma.vertices.push( new THREE.Vector3( -1,  2,  6 ) ); // VÃ©rtice 86 G
+forma.vertices.push( new THREE.Vector3(  1,  2,  6 ) ); // VÃ©rtice 87 H
 
 //Cuerpo
 forma.faces.push( new THREE.Face3( 3, 6, 7 ) ); // Cara 0
@@ -538,64 +538,64 @@ malla5.scale.set(0.05,0.05,0.05);
 var formaE = new THREE.Geometry();
 
 //Pie derecho
-formaE.vertices.push( new THREE.Vector3(  1,  0, -3 ) ); // Vértice 0 A
-formaE.vertices.push( new THREE.Vector3(  1,  0, -1 ) ); // Vértice 1 B
-formaE.vertices.push( new THREE.Vector3(  1,  8, -3 ) ); // Vértice 2 C
-formaE.vertices.push( new THREE.Vector3(  1,  8, -1 ) ); // Vértice 3 D
-formaE.vertices.push( new THREE.Vector3( -1,  0, -3 ) ); // Vértice 4 E
-formaE.vertices.push( new THREE.Vector3( -1,  0, -1 ) ); // Vértice 5 F
-formaE.vertices.push( new THREE.Vector3( -1,  8, -3 ) ); // Vértice 6 G
-formaE.vertices.push( new THREE.Vector3( -1,  8, -1 ) ); // Vértice 7 H
+formaE.vertices.push( new THREE.Vector3(  1,  0, -3 ) ); // VÃ©rtice 0 A
+formaE.vertices.push( new THREE.Vector3(  1,  0, -1 ) ); // VÃ©rtice 1 B
+formaE.vertices.push( new THREE.Vector3(  1,  8, -3 ) ); // VÃ©rtice 2 C
+formaE.vertices.push( new THREE.Vector3(  1,  8, -1 ) ); // VÃ©rtice 3 D
+formaE.vertices.push( new THREE.Vector3( -1,  0, -3 ) ); // VÃ©rtice 4 E
+formaE.vertices.push( new THREE.Vector3( -1,  0, -1 ) ); // VÃ©rtice 5 F
+formaE.vertices.push( new THREE.Vector3( -1,  8, -3 ) ); // VÃ©rtice 6 G
+formaE.vertices.push( new THREE.Vector3( -1,  8, -1 ) ); // VÃ©rtice 7 H
 
 //Pie izquierdo
-formaE.vertices.push( new THREE.Vector3(  1,  0,  1 ) ); // Vértice 8  A
-formaE.vertices.push( new THREE.Vector3(  1,  0,  3 ) ); // Vértice 9  B
-formaE.vertices.push( new THREE.Vector3(  1,  8,  1 ) ); // Vértice 10 C
-formaE.vertices.push( new THREE.Vector3(  1,  8,  3 ) ); // Vértice 11 D
-formaE.vertices.push( new THREE.Vector3( -1,  0,  1 ) ); // Vértice 12 E
-formaE.vertices.push( new THREE.Vector3( -1,  0,  3 ) ); // Vértice 13 F
-formaE.vertices.push( new THREE.Vector3( -1,  8,  1 ) ); // Vértice 14 G
-formaE.vertices.push( new THREE.Vector3( -1,  8,  3 ) ); // Vértice 15 H
+formaE.vertices.push( new THREE.Vector3(  1,  0,  1 ) ); // VÃ©rtice 8  A
+formaE.vertices.push( new THREE.Vector3(  1,  0,  3 ) ); // VÃ©rtice 9  B
+formaE.vertices.push( new THREE.Vector3(  1,  8,  1 ) ); // VÃ©rtice 10 C
+formaE.vertices.push( new THREE.Vector3(  1,  8,  3 ) ); // VÃ©rtice 11 D
+formaE.vertices.push( new THREE.Vector3( -1,  0,  1 ) ); // VÃ©rtice 12 E
+formaE.vertices.push( new THREE.Vector3( -1,  0,  3 ) ); // VÃ©rtice 13 F
+formaE.vertices.push( new THREE.Vector3( -1,  8,  1 ) ); // VÃ©rtice 14 G
+formaE.vertices.push( new THREE.Vector3( -1,  8,  3 ) ); // VÃ©rtice 15 H
 
 //Cuerpo
-formaE.vertices.push( new THREE.Vector3(  2,  8, -3 ) ); // Vértice 16 A
-formaE.vertices.push( new THREE.Vector3(  2,  8,  3 ) ); // Vértice 17 B
-formaE.vertices.push( new THREE.Vector3(  2, 14, -3 ) ); // Vértice 18 C
-formaE.vertices.push( new THREE.Vector3(  2, 14,  3 ) ); // Vértice 19 D
-formaE.vertices.push( new THREE.Vector3( -2,  8, -3 ) ); // Vértice 20 E
-formaE.vertices.push( new THREE.Vector3( -2,  8,  3 ) ); // Vértice 21 F
-formaE.vertices.push( new THREE.Vector3( -2, 14, -3 ) ); // Vértice 22 G
-formaE.vertices.push( new THREE.Vector3( -2, 14,  3 ) ); // Vértice 23 H
+formaE.vertices.push( new THREE.Vector3(  2,  8, -3 ) ); // VÃ©rtice 16 A
+formaE.vertices.push( new THREE.Vector3(  2,  8,  3 ) ); // VÃ©rtice 17 B
+formaE.vertices.push( new THREE.Vector3(  2, 14, -3 ) ); // VÃ©rtice 18 C
+formaE.vertices.push( new THREE.Vector3(  2, 14,  3 ) ); // VÃ©rtice 19 D
+formaE.vertices.push( new THREE.Vector3( -2,  8, -3 ) ); // VÃ©rtice 20 E
+formaE.vertices.push( new THREE.Vector3( -2,  8,  3 ) ); // VÃ©rtice 21 F
+formaE.vertices.push( new THREE.Vector3( -2, 14, -3 ) ); // VÃ©rtice 22 G
+formaE.vertices.push( new THREE.Vector3( -2, 14,  3 ) ); // VÃ©rtice 23 H
 
 //Cabeza
-formaE.vertices.push( new THREE.Vector3(  3, 14, -3 ) ); // Vértice 24 A
-formaE.vertices.push( new THREE.Vector3(  3, 14,  3 ) ); // Vértice 25 B
-formaE.vertices.push( new THREE.Vector3(  3, 21, -3 ) ); // Vértice 26 C
-formaE.vertices.push( new THREE.Vector3(  3, 21,  3 ) ); // Vértice 27 D
-formaE.vertices.push( new THREE.Vector3( -3, 14, -3 ) ); // Vértice 28 E
-formaE.vertices.push( new THREE.Vector3( -3, 14,  3 ) ); // Vértice 29 F
-formaE.vertices.push( new THREE.Vector3( -3, 21, -3 ) ); // Vértice 30 G
-formaE.vertices.push( new THREE.Vector3( -3, 21,  3 ) ); // Vértice 31 H
+formaE.vertices.push( new THREE.Vector3(  3, 14, -3 ) ); // VÃ©rtice 24 A
+formaE.vertices.push( new THREE.Vector3(  3, 14,  3 ) ); // VÃ©rtice 25 B
+formaE.vertices.push( new THREE.Vector3(  3, 21, -3 ) ); // VÃ©rtice 26 C
+formaE.vertices.push( new THREE.Vector3(  3, 21,  3 ) ); // VÃ©rtice 27 D
+formaE.vertices.push( new THREE.Vector3( -3, 14, -3 ) ); // VÃ©rtice 28 E
+formaE.vertices.push( new THREE.Vector3( -3, 14,  3 ) ); // VÃ©rtice 29 F
+formaE.vertices.push( new THREE.Vector3( -3, 21, -3 ) ); // VÃ©rtice 30 G
+formaE.vertices.push( new THREE.Vector3( -3, 21,  3 ) ); // VÃ©rtice 31 H
 
 //Brazo derecho
-formaE.vertices.push( new THREE.Vector3(  7, 12, -5 ) ); // Vértice 32 A
-formaE.vertices.push( new THREE.Vector3(  7, 12, -3 ) ); // Vértice 33 B
-formaE.vertices.push( new THREE.Vector3(  7, 14, -5 ) ); // Vértice 34 C
-formaE.vertices.push( new THREE.Vector3(  7, 14, -3 ) ); // Vértice 35 D
-formaE.vertices.push( new THREE.Vector3( -1, 12, -5 ) ); // Vértice 36 E
-formaE.vertices.push( new THREE.Vector3( -1, 12, -3 ) ); // Vértice 37 F
-formaE.vertices.push( new THREE.Vector3( -1, 14, -5 ) ); // Vértice 38 G
-formaE.vertices.push( new THREE.Vector3( -1, 14, -3 ) ); // Vértice 39 H
+formaE.vertices.push( new THREE.Vector3(  7, 12, -5 ) ); // VÃ©rtice 32 A
+formaE.vertices.push( new THREE.Vector3(  7, 12, -3 ) ); // VÃ©rtice 33 B
+formaE.vertices.push( new THREE.Vector3(  7, 14, -5 ) ); // VÃ©rtice 34 C
+formaE.vertices.push( new THREE.Vector3(  7, 14, -3 ) ); // VÃ©rtice 35 D
+formaE.vertices.push( new THREE.Vector3( -1, 12, -5 ) ); // VÃ©rtice 36 E
+formaE.vertices.push( new THREE.Vector3( -1, 12, -3 ) ); // VÃ©rtice 37 F
+formaE.vertices.push( new THREE.Vector3( -1, 14, -5 ) ); // VÃ©rtice 38 G
+formaE.vertices.push( new THREE.Vector3( -1, 14, -3 ) ); // VÃ©rtice 39 H
 
 //Brazo izquierdo
-formaE.vertices.push( new THREE.Vector3(  7, 12,  3 ) ); // Vértice 40 A
-formaE.vertices.push( new THREE.Vector3(  7, 12,  5 ) ); // Vértice 41 B
-formaE.vertices.push( new THREE.Vector3(  7, 14,  3 ) ); // Vértice 42 C
-formaE.vertices.push( new THREE.Vector3(  7, 14,  5 ) ); // Vértice 43 D
-formaE.vertices.push( new THREE.Vector3( -1, 12,  3 ) ); // Vértice 44 E
-formaE.vertices.push( new THREE.Vector3( -1, 12,  5 ) ); // Vértice 45 F
-formaE.vertices.push( new THREE.Vector3( -1, 14,  3 ) ); // Vértice 46 G
-formaE.vertices.push( new THREE.Vector3( -1, 14,  5 ) ); // Vértice 47 H
+formaE.vertices.push( new THREE.Vector3(  7, 12,  3 ) ); // VÃ©rtice 40 A
+formaE.vertices.push( new THREE.Vector3(  7, 12,  5 ) ); // VÃ©rtice 41 B
+formaE.vertices.push( new THREE.Vector3(  7, 14,  3 ) ); // VÃ©rtice 42 C
+formaE.vertices.push( new THREE.Vector3(  7, 14,  5 ) ); // VÃ©rtice 43 D
+formaE.vertices.push( new THREE.Vector3( -1, 12,  3 ) ); // VÃ©rtice 44 E
+formaE.vertices.push( new THREE.Vector3( -1, 12,  5 ) ); // VÃ©rtice 45 F
+formaE.vertices.push( new THREE.Vector3( -1, 14,  3 ) ); // VÃ©rtice 46 G
+formaE.vertices.push( new THREE.Vector3( -1, 14,  5 ) ); // VÃ©rtice 47 H
 
 //Pie derecho
 formaE.faces.push( new THREE.Face3( 3, 1, 0 ) ); // Cara 0
