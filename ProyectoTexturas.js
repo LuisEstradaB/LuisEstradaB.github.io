@@ -13,10 +13,9 @@ iluminacionVerde.position.z = -20;
 iluminacionAzul.position.y = 30;
 iluminacionAzul.position.z = 28.3;
 
-THREE.ImageUtils.crossOrigin = '';
-
 var escena = new THREE.Scene();
 var loader = new THREE.TextureLoader();
+loader.crossOrigin = "";
 var textura = loader.load('brick_diffuse.jpg');
 var materialN = new THREE.MeshLambertMaterial( {map: textura} );
 
