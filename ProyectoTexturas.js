@@ -16,7 +16,8 @@ iluminacionAzul.position.z = 28.3;
 var escena = new THREE.Scene();
 THREE.ImageUtils.crossOrigin = '';
 var textura = THREE.ImageUtils.loadTexture('https://luisestradab.github.io/brick_diffuse.jpg');
-var materialN = new THREE.MeshLambertMaterial( {map: textura} );
+var materialN1 = new THREE.MeshLambertMaterial( {map: textura} );
+var materialN = new THREE.MeshLambertMaterial();
 
 
 //-----------------------------------------------------------------
@@ -59,7 +60,7 @@ for ( var i = 23; i < 30; i ++ ) {
 var forma2 = new THREE.LatheGeometry(puntos);
 forma2.translate(-80,5,-80);
 
-var malla2 = new THREE.Mesh( forma2, materialN );
+var malla2 = new THREE.Mesh( forma2, materialN1 );
 malla2.scale.set(0.05,0.05,0.05);
 
 
