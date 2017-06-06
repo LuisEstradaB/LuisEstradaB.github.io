@@ -62,7 +62,7 @@ function setup() {
   
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerHeight*0.95, window.innerHeight*0.95 );
-  renderer.body.appendChid( renderer.domElement );
+  renderer.body.appendChild( renderer.domElement );
 }
 
 function loop() {
