@@ -61,7 +61,7 @@ function setup() {
   entorno.add( camara );
   
   renderer = new THREE.WebGLRenderer();
-  renderer.setsize( window.innerHeight*0.95, window.innerHeight*0.95 );
+  renderer.setSize( window.innerHeight*0.95, window.innerHeight*0.95 );
   renderer.body.appendChid( renderer.domElement );
 }
 
