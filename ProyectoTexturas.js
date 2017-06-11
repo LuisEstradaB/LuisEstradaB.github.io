@@ -60,7 +60,7 @@ for ( var i = 23; i < 30; i ++ ) {
 var forma2 = new THREE.LatheGeometry(puntos);
 forma2.translate(-80,5,-80);
 
-var malla2 = new THREE.Mesh( forma2, materialN1 );
+var malla2 = new THREE.Mesh( forma2, materialN );
 malla2.scale.set(0.05,0.05,0.05);
 
 
@@ -149,7 +149,7 @@ var forma1 = new THREE.ExtrudeGeometry( figura,
                                        {amount: 1} );
 
 forma1.translate(-10,0,-80);
-var malla1 = new THREE.Mesh( forma1, materialN );
+var malla1 = new THREE.Mesh( forma1, materialN1 );
 malla1.scale.set(0.05,0.05,0.05);
 
 
