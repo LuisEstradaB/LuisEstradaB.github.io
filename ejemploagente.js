@@ -3,7 +3,7 @@ function Pelota(r, x=0, y=0, material) {
   
 	var loader = new THREE.TextureLoader();	
 	loader.load( 'balon.jpg', function ( texture ) {
-		this.add(new THREE.Mesh( new THREE.SphereGeometry( r ),
+		entorno.add(new THREE.Mesh( new THREE.SphereGeometry( r ),
 					new THREE.MeshBasicMaterial( { map: texture } ) ));
 		//var geometry = new THREE.SphereGeometry( 1, 20, 20 );
 		//var mesh = new THREE.Mesh( geometry, material );
