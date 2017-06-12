@@ -5,7 +5,7 @@ function Pelota(r, x=0, y=0) {
   this.step = 0.1;
   this.colision = 0;
   this.radius = r;
-  this.sensor = new TRHEE.Raycaster(  this.position,
+  this.sensor = new THREE.Raycaster(  this.position,
                                       new THREE.Vector3( 1,0,0) );
 }
   
@@ -58,6 +58,7 @@ function setup() {
   entorno.add( new Pared(1,-7,1) );
   entorno.add( new Pared(1,7,-1) );
   entorno.add( new Pared(1,-7,-1) );
+  entorno.add( new Pelota(1,0,0) );
   entorno.add( camara );
   
   renderer = new THREE.WebGLRenderer();
