@@ -1,14 +1,13 @@
-function Pelota(r, x=0, y=0) {
+function Pelota(r, x=0, y=0, material) {
   Agent.call(this,x,y);
   this.add(new THREE.Mesh(  new THREE.SphereGeometry( r ),
-                            materialbalon ));
+                            material ));
   this.step = 0.1;
   this.colision = 0;
   this.radius = r;
   this.sensor = new THREE.Raycaster(  this.position,
                                       new THREE.Vector3( 1,0,0) );
 }
-var materialbalon;
   
 Pelota.prototype = new Agent();
   
@@ -56,7 +55,7 @@ function setup() {
   var loader = new THREE.TextureLoader();
 				loader.load( 'balon.jpg', function ( texture ) {
 					//var geometry = new THREE.SphereGeometry( 1, 20, 20 );
-					materialbalon = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
+					var materialbalon = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
 					//var mesh = new THREE.Mesh( geometry, material );
 					//entorno.add( mesh );
 				} );
@@ -67,7 +66,7 @@ function setup() {
   entorno.add( new Pared(1,-7,1) );
   entorno.add( new Pared(1,7,-1) );
   entorno.add( new Pared(1,-7,-1) );
-  entorno.add( new Pelota(1,0,0) );
+  entorno.add( new Pelota(1,0,0,materialbalon) );
   entorno.add( camara );
   
   renderer = new THREE.WebGLRenderer();
