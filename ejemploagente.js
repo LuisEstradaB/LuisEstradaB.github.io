@@ -55,12 +55,6 @@ function setup() {
 	var materialbalon = new THREE.MeshBasicMaterial();
   
 	var loader = new THREE.TextureLoader();
-	loader.load( 'balon.jpg', function ( texture ) {
-		//var geometry = new THREE.SphereGeometry( 1, 20, 20 );
-		materialbalon.map = texture;
-		//var mesh = new THREE.Mesh( geometry, material );
-		//entorno.add( mesh );
-	} );
   
 	entorno.add( new Pared(1,7,0) );
 	entorno.add( new Pared(1,-7,0) );
@@ -77,12 +71,19 @@ function setup() {
 }
 
 function loop() {
-  requestAnimationFrame( loop );
+	requestAnimationFrame( loop );
+	
+	loader.load( 'balon.jpg', function ( texture ) {
+		//var geometry = new THREE.SphereGeometry( 1, 20, 20 );
+		materialbalon.map = texture;
+		//var mesh = new THREE.Mesh( geometry, material );
+		//entorno.add( mesh );
+	} );
   
-  entorno.sense();
-  entorno.plan();
-  entorno.act();
-  renderer.render( entorno, camara );
+	entorno.sense();
+	entorno.plan();
+	entorno.act();
+	renderer.render( entorno, camara );
 }
 
 var entorno, camara, renderer;
