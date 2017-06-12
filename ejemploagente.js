@@ -52,6 +52,14 @@ function setup() {
   camara = new THREE.PerspectiveCamera();
   camara.position.z = 30;
   
+  var loader = new THREE.TextureLoader();
+				loader.load( 'brick_diffuse.jpg', function ( texture ) {
+					var geometry = new THREE.SphereGeometry( 1, 20, 20 );
+					var material = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
+					var mesh = new THREE.Mesh( geometry, material );
+					entorno.add( mesh );
+				} );
+  
   entorno.add( new Pared(1,7,0) );
   entorno.add( new Pared(1,-7,0) );
   entorno.add( new Pared(1,7,1) );
