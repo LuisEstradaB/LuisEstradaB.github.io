@@ -1,14 +1,16 @@
 function Pelota(r, x=0, y=0, material) {
 	Agent.call(this,x,y);
   
+	var malla = new THREE.Mesh( new THREE.SphereGeometry( r ),
+				new THREE.MeshBasicMaterial() );
 	var loader = new THREE.TextureLoader();	
 	loader.load( 'balon.jpg', function ( texture ) {
-		entorno.add(new THREE.Mesh( new THREE.SphereGeometry( r ),
-					new THREE.MeshBasicMaterial( { map: texture } ) ));
 		//var geometry = new THREE.SphereGeometry( 1, 20, 20 );
 		//var mesh = new THREE.Mesh( geometry, material );
+		malla.material.map = texture;
 		//entorno.add( mesh );
 	} );
+	this.add(malla);
 	this.step = 0.1;
 	this.colision = 0;
 	this.radius = r;
