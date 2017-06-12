@@ -48,30 +48,32 @@ function Pared(size, x=0, y=0) {
 Pared.prototype =new THREE.Object3D();
 
 function setup() {
-  entorno = new Environment();
-  camara = new THREE.PerspectiveCamera();
-  camara.position.z = 30;
+	entorno = new Environment();
+	camara = new THREE.PerspectiveCamera();
+	camara.position.z = 30;
   
-  var loader = new THREE.TextureLoader();
-				loader.load( 'balon.jpg', function ( texture ) {
-					//var geometry = new THREE.SphereGeometry( 1, 20, 20 );
-					var materialbalon = new THREE.MeshBasicMaterial( { map: texture, overdraw: 0.5 } );
-					//var mesh = new THREE.Mesh( geometry, material );
-					//entorno.add( mesh );
-				} );
+	var materialbalon = new THREE.MeshBasicMaterial();
   
-  entorno.add( new Pared(1,7,0) );
-  entorno.add( new Pared(1,-7,0) );
-  entorno.add( new Pared(1,7,1) );
-  entorno.add( new Pared(1,-7,1) );
-  entorno.add( new Pared(1,7,-1) );
-  entorno.add( new Pared(1,-7,-1) );
-  entorno.add( new Pelota(1,0,0,materialbalon) );
-  entorno.add( camara );
+	var loader = new THREE.TextureLoader();
+	loader.load( 'balon.jpg', function ( texture ) {
+		//var geometry = new THREE.SphereGeometry( 1, 20, 20 );
+		materialbalon.map = texture;
+		//var mesh = new THREE.Mesh( geometry, material );
+		//entorno.add( mesh );
+	} );
   
-  renderer = new THREE.WebGLRenderer();
-  renderer.setSize( window.innerHeight*0.95, window.innerHeight*0.95 );
-  document.body.appendChild( renderer.domElement );
+	entorno.add( new Pared(1,7,0) );
+	entorno.add( new Pared(1,-7,0) );
+	entorno.add( new Pared(1,7,1) );
+	entorno.add( new Pared(1,-7,1) );
+	entorno.add( new Pared(1,7,-1) );
+	entorno.add( new Pared(1,-7,-1) );
+	entorno.add( new Pelota(1,0,0,materialbalon) );
+	entorno.add( camara );
+  
+	renderer = new THREE.WebGLRenderer();
+	renderer.setSize( window.innerHeight*0.95, window.innerHeight*0.95 );
+	document.body.appendChild( renderer.domElement );
 }
 
 function loop() {
